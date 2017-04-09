@@ -1,0 +1,28 @@
+#currentDate {
+  padding: 5px;
+  text-align: right;
+  font-size: 16px;
+}
+
+body {
+  margin:auto;
+  text-align: center;
+}
+
+.footerText {
+  color: grey;
+}
+
+.navbar {
+  background: linear-gradient(#FFFFFF, rgb(213, 255, 216));
+}
+
+#footer {
+  display: inline-block;
+}
+
+.footerElement {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}

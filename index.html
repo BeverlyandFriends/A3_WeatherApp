@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="weather">
+<head>
+  <meta charset="utf-8">
+  <title>CPS630 ToDo List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+  <script src="scripts/javascript/weather.js"></script>
+</head>
+<body>
+  <header>
+    <div id="currentDate" ng-controller="weather-appController">{{date | date:'fullDate'}}</div>
+    <h1>CPS847 A3</h1>
+  </header>
+  <main>
+    <h2>Current Temperature</h3>
+    <div ng-controller="weather-appController"><h4>{{location}} </h4></div>
+    <div ng-controller="weather-appController">{{temperature}} </div>
+    <div ng-controller="weather-appController">{{weatherdes}} </div>
+    <div id="icon">
+      {{icon}}
+    </div>
+  </main>
+  <footer>
+    <section id="footer">
+      <section class="nav navbar-fixed-bottom navbar">
+        <section class="footerElement">
+          <h4>About Us</h4>
+          <span class="footerText">BeverlyAndFriends</span><br>
+          <span class="footerText">We do stuff.</span><br>
+          <span class="footerText">And customers.</span>
+        </section>
+        <section class="footerElement">
+          <h4>Our Services</h4>
+          <span class="footerText">We do services.</span><br>
+          <span class="footerText">Mostly assignments</span>
+        </section>
+        <section class="footerElement">
+          <h4>Our Customers</h4>
+          <span class="footerText">We do customers.</span><br>
+          <span class="footerText">And stuff for customers.</span>
+        </section>
+      </section>
+    </section>
+
+  </footer>
+</body>
+</html>
